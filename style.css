@@ -1,0 +1,118 @@
+html {
+  height: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(255, 238, 219, 75%);
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+header {
+  background-color: rgba(255, 238, 219, 100%);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: rgb(70, 55, 48);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(13, 92, 99);
+  font-size: 1.3rem;
+}
+a:hover {
+  color: rgb(120, 205, 215);
+}
+
+p {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  color: rgb(70, 55, 48);
+}
+.bolder-paragraph {
+  font-weight: bold;
+}
+
+.contact,
+.poke-list-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.loader {
+  border: 16px solid rgb(255, 238, 219);
+  border-top: 16px solid rgb(120, 205, 215);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 3s linear infinite;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pokemon-list {
+  display: none;
+}
+form {
+  padding: 2em;
+  border-radius: 1rem;
+}
+input {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.form-error {
+  display: none;
+  color: rgb(187, 10, 33);
+  font-size: 1rem;
+  margin-top: 2px;
+}
+
+button {
+  background-color: rgb(13, 92, 99);
+  border: none;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+button:hover {
+  background-color: rgb(120, 205, 215);
+  font-weight: bold;
+}
+
+.success-message {
+  color: rgb(13, 92, 99);
+  display: none;
+}
