@@ -116,3 +116,7 @@ button:hover {
   color: rgb(13, 92, 99);
   display: none;
 }
+
+.error-message p {
+  color: rgb(187, 10, 33);
+}
