@@ -35,6 +35,7 @@ async function showPokemonDetails() {
         <p class="bolder-paragraph">Weight:</p>  <p>${pokemon.weight} kg</p>
       `;
       makeHtml.style.display = "block";
+      document.querySelector("h1").textContent = pokemon.name;
     }, 1000);
   } catch (error) {
     console.log(error);
